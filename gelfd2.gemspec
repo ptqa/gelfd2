@@ -5,9 +5,8 @@ require "gelfd2/version"
 Gem::Specification.new do |s|
   s.name        = "gelfd2"
   s.version     = Gelfd2::VERSION
-  s.authors     = ["John E. Vincent"]
-  s.email       = ["lusis.org+github.com@gmail.com"]
-  s.homepage    = ""
+  s.authors     = ["John E. Vincent", "ptQa"]
+  s.homepage    = "https://github.com/ptqa/gelfd2"
   s.summary     = %q{Pure ruby gelf server and decoding library}
   s.description = %q{Standalone implementation of the Graylog Extended Log Format}
 
