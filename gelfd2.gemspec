@@ -1,17 +1,17 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "gelfd/version"
+require "gelfd2/version"
 
 Gem::Specification.new do |s|
-  s.name        = "gelfd"
-  s.version     = Gelfd::VERSION
+  s.name        = "gelfd2"
+  s.version     = Gelfd2::VERSION
   s.authors     = ["John E. Vincent"]
   s.email       = ["lusis.org+github.com@gmail.com"]
   s.homepage    = ""
   s.summary     = %q{Pure ruby gelf server and decoding library}
   s.description = %q{Standalone implementation of the Graylog Extended Log Format}
 
-  s.rubyforge_project = "gelfd"
+  s.rubyforge_project = "gelfd2"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")

@@ -1,4 +1,4 @@
-module Gelfd
+module Gelfd2
   class Parser
 
     def self.parse(data)

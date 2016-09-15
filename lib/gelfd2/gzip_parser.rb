@@ -1,5 +1,5 @@
 require 'zlib'
-module Gelfd
+module Gelfd2
   class GzipParser
 
     def self.parse(data)
