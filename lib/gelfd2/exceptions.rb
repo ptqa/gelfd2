@@ -1,4 +1,4 @@
-module Gelfd
+module Gelfd2
   class NotChunkedDataError < StandardError; end
   class DuplicateChunkError < StandardError; end
   class TooManyChunksError < StandardError; end

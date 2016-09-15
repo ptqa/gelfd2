@@ -1,5 +1,5 @@
 $:.unshift(File.expand_path(File.join(File.dirname(__FILE__), "..", "lib")))
-require 'gelfd'
+require 'gelfd2'
 require 'json'
 require 'test/unit'
 
@@ -10,7 +10,7 @@ class TestChhunkedGelf < Test::Unit::TestCase
     files = Dir.glob("#{FIXTURE_PATH}/*.chunk")
     files.each do |file|
       data = File.open("#{file}", "rb") {|f| f.read}
-      @t = Gelfd::Parser.parse(data)
+      @t = Gelfd2::Parser.parse(data)
     end
     assert_equal(JSON_MESSAGE, @t)
   end

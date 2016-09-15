@@ -1,4 +1,4 @@
-module Gelfd
+module Gelfd2
   class ChunkedParser
     @@chunk_map = Hash.new {|hash,key| hash[key] = {:total_chunks => 0, :chunks => {} } }
 
