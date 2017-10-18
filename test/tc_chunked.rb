@@ -9,7 +9,7 @@ class TestChhunkedGelf < Test::Unit::TestCase
   def test_chunked_message
     files = Dir.glob("#{FIXTURE_PATH}/*.chunk")
     files.each do |file|
-      data = File.open("#{file}", "rb") {|f| f.read}
+      data = File.open("#{file}", "rb") { |f| f.read }
       @t = Gelfd2::Parser.parse(data)
     end
     assert_equal(JSON_MESSAGE, @t)
